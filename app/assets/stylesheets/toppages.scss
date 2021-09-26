@@ -1,0 +1,779 @@
+// Place all the styles related to the toppages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul {
+  list-style-type: none;
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+  margin-top: -56px;
+}
+
+.navbar-brand {
+  padding-left: 70px;
+  font-family: "メイリオ";
+  font-weight: bold;
+}
+
+a.nav-link span {
+  color:#ffff;
+}
+
+a.nav-link span:hover {
+  color: #008000;
+}
+
+.introduction {
+  display:flex;
+  justify-content:space-around;
+  background-color: #cccccc;
+}
+
+.box {
+  margin: 50px 20px;}
+
+.box a:hover {
+  opacity: 0.5;
+}
+
+.text-box {
+  position: relative;
+  padding: 0;
+}
+
+.text-contents {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 2.4vw;
+  font-family: "メイリオ";
+}
+
+.title {
+  margin-bottom: 100px;
+}
+
+.title h1 {
+  font-size: 5.2vw;
+  font-family: "メイリオ";
+  margin-top: 10vw;
+}
+
+.title p {
+  font-size: 1.8vw;
+  font-family: "メイリオ";
+}
+
+.triangle-box {
+  display:flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  font-family: "メイリオ";
+}
+
+.triangle-contens1 {
+  padding-top: 70px;
+  margin-bottom: 20px;
+  background-image: url(triangle-image1.png);
+  background-size: contain;
+  border-radius: 50%;
+  width: 266px;
+  height: 266px;
+  color: #fff;
+}
+
+.triangle-contens1 a {
+  color: #fff;
+  border: solid 1px #fff;
+  padding: 10px;
+}
+
+.triangle-contens1 a:hover {
+  background-color: #73c838;
+}
+
+.triangle-contens2 {
+  padding-top: 70px;
+  margin-bottom: 20px;
+  background-image: url(triangle-image2.png);
+  background-size: contain;
+  border-radius: 50%;
+  width: 266px;
+  height: 266px;
+  color: #fff;
+}
+
+.triangle-contens2 a {
+  color: #fff;
+  border: solid 1px #fff;
+  padding: 10px;
+}
+
+.triangle-contens2 a:hover {
+  background-color: #73c838;
+}
+
+
+.triangle-contens3 {
+  padding-top: 70px;
+  margin-bottom: 20px;
+  background-image: url(triangle-image3.png);
+  background-size: contain;
+  border-radius: 50%;
+  width: 266px;
+  height: 266px;
+  color: #fff;
+}
+
+.triangle-contens3 a {
+  color: #fff;
+  border: solid 1px #fff;
+  padding: 10px;
+}
+
+.triangle-contens3 a:hover {
+  background-color: #73c838;
+}
+
+.explanation {
+  margin-top: 50px;
+}
+
+.explanation p {
+  font-size: 2vw;
+  font-family: "メイリオ";
+}
+
+.gray-base {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+}
+
+.training-title h1 {
+  margin-top: 30px;
+  font-size: 6vw;
+  font-family: "メイリオ";
+  border-top: solid 1.5px #008000;
+  padding: 20px;
+}
+
+#training-title p {
+  margin-top: -30px;
+  font-size: 2vw;
+  font-family: "メイリオ";
+}
+
+.training-text h2 {
+  display: inline-block;
+  border-top: solid 1px #cccccc;
+  padding-top: 30px;
+  font-size: 4vw;
+}
+
+.training-content p {
+  margin-top: 20px;
+  font-size: 1.8vw;
+}
+
+.training-caution p {
+  font-size: 1.5vw;
+}
+
+ul,li{
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+}
+
+#accordion_menu h4 {
+  padding-left: 80px;
+}
+
+#accordion_menu p {
+  font-size: 1.7vw;
+}
+
+#accordion_menu > li {
+  border: #ccc 1px solid;
+}
+
+#accordion_menu a{
+  color: #fff;
+}
+
+#accordion_menu a[data-toggle="collapse"]{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  position: relative;
+}
+#accordion_menu a[data-toggle="collapse"]:hover{
+  color: #73c838;
+}
+#accordion_menu a[data-toggle="collapse"]::after{
+  content:"";
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top: #73c838 1px solid;
+  border-right: #73c838 1px solid;
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#accordion_menu a[aria-expanded=false]::after{
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition-duration: 0.3s;
+}
+#accordion_menu a[aria-expanded=true]::after{
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  transition-duration: 0.3s;
+}
+
+[id^="menu"] li{
+  padding: 10px 10px 10px 20px;
+}
+
+#accordion_menu li.accordion1 {
+  background-image: url(training-contents-image.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px;
+}
+
+li.accordion-text1 {
+  border: solid 1px #000;
+  border-top: none;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px;
+}
+
+#accordion_menu li.accordion2 {
+  background-image: url(body-image.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px;
+}
+
+li.accordion-text2 {
+  border: solid 1px #000;
+  border-top: none;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px;
+}
+
+#accordion_menu li.accordion3 {
+  background-image: url(performance-image.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px;
+}
+
+li.accordion-text3 {
+  border: solid 1px #000;
+  border-top: none;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px;
+}
+
+#accordion_menu li.accordion4 {
+  background-image: url(old-image.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  box-shadow: 2px 2px 4px;
+}
+
+li.accordion-text4 {
+  border: solid 1px #000;
+  border-top: none;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px;
+}
+
+.green-base {
+  margin-top: 100px;
+  padding-bottom: 40px;
+  background-color: #88c849;
+}
+
+.lesson p {
+  padding-top: 50px;
+  font-size: 3vw;
+  font-family: 'メイリオ';
+}
+
+.lesson h3 {
+  margin-bottom: 30px;
+  font-size: 3.5vw;
+  color: #fff;
+}
+
+.lesson-box {
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.counseling {
+  border: solid 5px #88c849;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.counseling-title span {
+  color: #b3b3b3;
+}
+
+.counseling-text {
+  padding: 10px;
+  color: #808080;
+}
+
+.body-evaluation {
+  border: solid 5px #88c849;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.body-evaluation-title span {
+  color: #b3b3b3;
+}
+
+.body-evaluation-text {
+  padding: 10px;
+  color: #808080;
+}
+
+.program {
+  border: solid 5px #88c849;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.program-title span {
+  color: #b3b3b3;
+}
+
+.program-text {
+  padding: 10px;
+  color: #808080;
+}
+
+.campaign {
+  margin-top: 5px;
+  outline: solid 10px #88c849;
+  outline-offset: -8px;
+}
+
+.service-title {
+  margin-top: 5px;
+  font-size: 1.8vw;
+}
+
+.campaign-web-from {
+  margin-top: 50px;
+  background-color: #c0d84f;
+  box-shadow: 0 0 8px gray;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.campaign-web-from :hover {
+  color: #73c838;
+}
+
+.campaign-web-from a{
+  text-decoration: none;
+  color: #808080;
+}
+
+.campaign-web-tel {
+  background-color: #c0d84f;
+  box-shadow: 0 0 8px gray;
+  padding: 10px;
+  color: #808080;
+}
+
+.private {
+  margin-top: 40px;
+  font-family: 'メイリオ';
+  padding-bottom: 30px;
+}
+
+.private-image {
+  position: relative;
+}
+
+.private-text {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  padding: 15px;
+}
+
+.private-text h3 {
+  color: #fff;
+  font-size: 3.4vw;
+  text-align: center;
+}
+
+.private-text p {
+  color: #fff;
+  font-size: 2.0vw;
+}
+
+.private-text-contents {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.private-text-contents a {
+  color: #fff;
+  border: solid 1px #fff;
+  padding: 10px 50px;
+  text-decoration: none;
+}
+
+.private-text-contents a:hover {
+  background-color: #73c838;
+}
+
+.rental-box {
+  padding-bottom: 60px;
+  border-bottom: solid 1.5px #008000;
+}
+
+.rental-image {
+  margin-top: 100px;
+}
+
+.rental-image h4 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2vw;
+  font-family: 'メイリオ';
+}
+
+.rental-contents p {
+  margin-top: 30px;
+  font-size: 1.6vw;
+  font-weight: lighter;
+}
+
+.rental-detail {
+  margin-top: 30px;
+}
+
+.rental-detail a {
+  text-decoration: none;
+  color: #333333;
+  border: solid 1px #333333;
+  padding: 10px 50px;
+}
+
+.rental-detail a:hover {
+  background-color: #73c838;
+  color: #fff;
+  border: none;
+}
+
+.gray-base2 {
+  margin-top: 70px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 60px;
+  background-color: #f2f2f2;
+}
+
+.food-box {
+  padding-bottom:100px;
+  border-bottom: solid 1.5px #008000;
+}
+
+.food-title h1 {
+  margin-top: 40px;
+  font-size: 6vw;
+  font-family: "メイリオ";
+  border-top: solid 1.5px #008000;
+  padding: 20px;
+}
+
+.food-title-sab {
+  border-bottom: solid 1px #b3b3b3;
+  font-size: 1.8vw;
+  font-family: 'メイリオ';
+}
+
+.food-image img {
+  margin-top: 120px;
+}
+
+.food-image h4 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2vw;
+  font-family: 'メイリオ';
+}
+
+.food-contents p {
+  margin-top: 30px;
+  font-size: 1.6vw;
+  font-weight: lighter;
+}
+
+.food-text {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.8vw;
+}
+
+.food-detail {
+  margin-top: 50px;
+}
+
+.food-detail a {
+  text-decoration: none;
+  color: #333333;
+  border: solid 1px #333333;
+  padding: 10px 50px;
+}
+
+.food-detail a:hover {
+  background-color: #73c838;
+  color: #fff;
+  border: none;
+}
+
+.gray-base3 {
+  margin-top: 70px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 60px;
+  background-color: #f2f2f2;
+}
+
+.bodycare-title h1 {
+  margin-top: 40px;
+  font-size: 6vw;
+  font-family: "メイリオ";
+  border-top: solid 1.5px #008000;
+  padding: 20px;
+}
+
+.bodycare-title-sab {
+  border-bottom: solid 1px #b3b3b3;
+  font-size: 1.8vw;
+  font-family: 'メイリオ';
+}
+
+.white-base {
+  margin-top: 50px;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.bodycare-image1 {
+  display: inline-block;
+  margin-left: -20px;
+  margin-top: 30px;
+}
+
+.bodycare-text1 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+.bodycare-text1 h5 {
+  font-size: 1.3rem;
+}
+
+.bodycare-text1 p {
+  font-family:'Times New Roman', Times, serif
+}
+
+.bodycare-image2 {
+  display: inline-block;
+  margin-left: -20px;
+  margin-top: 30px;
+}
+
+.bodycare-text2 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+.bodycare-text2 h5 {
+  font-size: 1.3rem;
+}
+
+.bodycare-text2 p {
+  font-family:'Times New Roman', Times, serif
+}
+
+
+.bodycare-image3 {
+  display: inline-block;
+  margin-left: -20px;
+  margin-top: 30px;
+}
+
+.bodycare-text3 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+.bodycare-text3 h5 {
+  font-size: 1.3rem;
+}
+
+.bodycare-text3 p {
+  font-family:'Times New Roman', Times, serif
+}
+
+.bodycare-image4 {
+  display: inline-block;
+  margin-left: -20px;
+  margin-top: 30px;
+}
+
+.bodycare-text4 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+.bodycare-text4 h5 {
+  font-size: 1.3rem;
+}
+
+.bodycare-text4 p {
+  font-family:'Times New Roman', Times, serif
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.logo-contents-image {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.logo-contents-image1 {
+  margin-top: 50px;
+}
+
+.logo-contents-image2 {
+  margin-top: 50px;
+}
+
+.trainer-box {
+  margin-top: 50px;
+}
+
+.trainer-image {
+  position: relative;
+}
+
+.trainer-contents {
+  position: absolute;
+  top: 87%;
+  left: 10%;
+}
+
+.trainer-contents a {
+  text-decoration: none;
+  border: solid 1px #fff;
+  padding: 10px 50px;
+  color: #fff;
+}
+
+.trainer-contents a:hover {
+  background-color:#73c838;
+}
+
+.last-border {
+  border-bottom: solid 1.5px #008000;
+  margin-top: 100px;
+}
+
+.last-from {
+  padding-top: 100px;
+}
+
+.last-web-from {
+  background-color: #c0d84f;
+  box-shadow: 0 0 8px gray;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.last-web-from a {
+  text-decoration: none;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.last-web-from :hover {
+  color: #73c838;
+}
+
+.last-web-from a h3 {
+  padding-top: 10px;
+  font-size: 1.4rem;
+}
+
+.size {
+  font-size: 30px;
+}
+
+.last-web-tel {
+  background-color: #c0d84f;
+  box-shadow: 0 0 8px gray;
+  padding: 10px;
+}
+
+.last-web-tel p {
+  color: #fff;
+}
+
+.last-web-tel h4 {
+  color: #fff;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #000;
+  color: #fff;
+}
